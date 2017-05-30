@@ -5,8 +5,16 @@
 
 ================================== */
 
+$theme-white: #FFFFFF;
+$theme-black: #000000;
+
 $theme-light-grey: #F5F6F8;
 $theme-dark-grey: #3A3D40;
+$theme-light-orange: #FF9800; 
+$theme-dark-orange: #ff7b00; 
+
+$theme-nav-text: #666666;
+$theme-nav-hover: #373737;
 
 /* ==================================
 
@@ -16,7 +24,7 @@ $theme-dark-grey: #3A3D40;
 
 body {
   margin: 0;
-  font-family: "Avenir Next", "Helvetica Neue";
+  font-family: 'Open Sans', sans-serif;
 }
 
 * {
