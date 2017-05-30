@@ -4,3 +4,19 @@
 // Header
 
 ================================== */
+
+.header {
+	@include row;
+
+	.header__logo {
+		@include column(12);
+	}
+
+	.header__navbar {
+		@include column(12);
+	}
+
+	.header__cta {
+		@include column(12);
+	}
+}
