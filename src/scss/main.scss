@@ -76,12 +76,17 @@ $grid-columns: 12;
 	@include container;
 	@include max-width-wrapper;
 }
-// .main-content {
-// 	@include row;
-// }
-// section {
-// 	@include column(12);
-// }
+
+.inner-row-width {
+  margin: 0 auto !important;
+  float: none;
+  @media( min-width: 768px ){
+    max-width: 90%;
+  }
+  @media( min-width: 1024px ){
+    max-width: 850px;
+  }
+}
 
 /* ==================================
 
