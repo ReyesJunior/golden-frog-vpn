@@ -1,0 +1,95 @@
+
+/* ==================================
+
+// Theme Styles
+
+================================== */
+
+
+/* ==================================
+
+// General Rules
+
+================================== */
+
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Helvetica Neue";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+%clearfix {
+  &:after {
+     content: "";
+     visibility: hidden;
+     display: block;
+     height: 0;
+     clear: both;
+  }
+}
+
+/* ==================================
+
+// Dynamic Grid styles
+
+================================== */
+
+@mixin container {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+@mixin row {
+  margin: 0 -15px;
+    @extend %clearfix;
+}
+
+$grid-columns: 12;
+@mixin column( $columns ) {
+  float: left;
+  padding: 0 15px;
+  width: 100%;
+  @media( min-width: 768px ){
+    width: percentage( ($columns/$grid-columns ) );
+  }
+}
+
+// Max-width-wrapper
+@mixin max-width-wrapper {
+	max-width: 1440px;
+}
+
+/* ==================================
+
+// page-setup
+
+================================== */
+
+.page-container {
+	@include container;
+	@include max-width-wrapper;
+}
+// .main-content {
+// 	@include row;
+// }
+// section {
+// 	@include column(12);
+// }
+
+/* ==================================
+
+// Imports
+
+================================== */
+
+
+
+
+
