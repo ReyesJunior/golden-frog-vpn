@@ -11,13 +11,64 @@
 
 	.header__logo {
 		@include column(12);
+		padding: 15px;
+		text-align: center;
+		@media( min-width: 768px ) {
+			@include column(3);
+		}
 	}
 
 	.header__navbar {
 		@include column(12);
+		@media( min-width: 768px ) {
+			@include column(7);
+		}
+
+		&--nav {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+			width: 95%;
+			margin: 0 auto;
+			padding: 0;
+			list-style: none;
+			@media( min-width: 768px ) {
+				width: 100%;
+			}
+		}
+
+		&--item {
+			font-size: 12px;
+			flex-grow: 1;
+			text-align: center;
+			@media( min-width: 768px ) {
+				font-size: 18px;
+			}
+
+			&:hover {
+				background-color: red;
+			}
+		}
+
+		&--anchor {
+			display: block;
+			text-decoration: none;
+		}
 	}
 
 	.header__cta {
 		@include column(12);
+		display: none;
+		@media( min-width: 768px ) {
+			@include column(2);
+			display: block;
+			text-align: center;
+		}
+
+		&--button {
+			background-color: blue;
+		}
 	}
 }
