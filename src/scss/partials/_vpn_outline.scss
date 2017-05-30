@@ -1,0 +1,49 @@
+
+/* ==================================
+
+// VPN
+
+================================== */
+
+.vpn {
+	@include row;
+
+	.vpn__image {
+		@include column(12);
+		background: $theme-white;
+		text-align: center;
+		padding: 35px 15px;
+		@media( min-width: 768px ) {
+			@include column(5);
+			float: right;
+		}
+
+		&--cloud {
+			max-width: 135px;
+			@media( min-width: 768px ) {
+				max-width: 200px;
+    			margin-top: 25px;
+			}
+		}
+	}
+	.vpn__product {
+		@include column(12);
+		text-align: center;
+		@media( min-width: 768px ) {
+			@include column(7);
+			text-align: left;
+		}
+
+		&--header {
+			font-weight: 300;
+			color: #333;
+		}
+
+		&--body {
+			font-size: 14px;
+			padding: 0 25px;
+			line-height: 21px;
+			color: #666666;
+		}
+	}
+}
