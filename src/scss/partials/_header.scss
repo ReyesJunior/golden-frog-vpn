@@ -11,10 +11,12 @@
 
 	.header__logo {
 		@include column(12);
-		padding: 15px;
+		padding: 25px 15px;
 		text-align: center;
 		@media( min-width: 768px ) {
 			@include column(3);
+			padding: 25px 10px 15px;
+			text-align: center;
 		}
 	}
 
@@ -30,8 +32,8 @@
 			flex-wrap: nowrap;
 			justify-content: center;
 			align-items: center;
-			width: 95%;
-			margin: 0 auto;
+			width: 90%;
+			margin: 0 auto 15px;
 			padding: 0;
 			list-style: none;
 			@media( min-width: 768px ) {
@@ -42,19 +44,26 @@
 		&--item {
 			font-size: 12px;
 			flex-grow: 1;
+			padding: 10px 0;
 			text-align: center;
 			@media( min-width: 768px ) {
-				font-size: 18px;
+				font-size: 14px;
+				margin-top: 15px;
 			}
 
 			&:hover {
-				background-color: red;
+				background-color: $theme-nav-hover;
+			}
+			&:hover .header__navbar--anchor {
+				color: $theme-white;
 			}
 		}
 
 		&--anchor {
 			display: block;
+			padding: 0 5px;
 			text-decoration: none;
+			color: $theme-nav-text;
 		}
 	}
 
@@ -64,11 +73,19 @@
 		@media( min-width: 768px ) {
 			@include column(2);
 			display: block;
+			margin-top: 20px;
 			text-align: center;
 		}
 
 		&--button {
-			background-color: blue;
+			background: $theme-light-orange;
+			padding: 8px 16px;
+			border: none;
+			color: #fff;
+
+			&:hover {
+				background: $theme-dark-orange;
+			}
 		}
 	}
 }
