@@ -15,7 +15,7 @@
 		text-align: center;
 		@media( min-width: 768px ) {
 			@include column(3);
-			padding: 25px 10px 15px;
+			margin-top: 25px;
 			text-align: center;
 		}
 	}
