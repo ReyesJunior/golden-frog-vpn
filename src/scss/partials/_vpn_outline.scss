@@ -48,18 +48,12 @@
 		}
 
 		&--body {
-			font-size: 12px;
-			padding: 0 15px;
-			line-height: 18px;
+			font-size: 14px;
+			line-height: 21px;
 			color: #666666;
-			@media( min-width: 425px ) {
-				font-size: 14px;
-				line-height: 21px;
-			}
 			@media( min-width: 768px ) {
 				font-size: 16px;
 				line-height: 24px;
-				padding: 0;
 			}
 			@media( min-width: 992px ) {
 				font-size: 18px;
