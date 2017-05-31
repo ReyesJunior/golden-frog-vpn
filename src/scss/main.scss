@@ -26,6 +26,7 @@ $theme-nav-hover: #373737;
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  background: $theme-white;
 }
 
 * {
@@ -88,15 +89,23 @@ $grid-columns: 12;
 	@include max-width-wrapper;
 }
 
-.inner-row-width {
-  margin: 0 auto !important;
+.nav-inner-row-width,.inner-row-width {
+  margin: 0 auto;
   float: none;
+  padding: 0 15px;
+  @media( min-width: 425px ) {
+    padding: 0 25px;
+  }
   @media( min-width: 768px ){
     max-width: 90%;
+    padding: 0;
   }
   @media( min-width: 1024px ){
-    max-width: 1024px;
+    max-width: 900px;
   }
+}
+.nav-inner-row-width {
+  padding: 0;
 }
 
 /* ==================================
