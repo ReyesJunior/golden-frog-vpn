@@ -11,11 +11,10 @@
 
 	.header__logo {
 		@include column(12);
-		padding: 25px 15px;
+		margin: 25px auto 15px;
 		text-align: center;
 		@media( min-width: 768px ) {
 			@include column(3);
-			margin-top: 25px;
 			text-align: center;
 		}
 	}
@@ -32,27 +31,36 @@
 			flex-wrap: nowrap;
 			justify-content: center;
 			align-items: center;
-			width: 90%;
+			max-width: 315px;
 			margin: 0 auto 15px;
 			padding: 0;
 			list-style: none;
+			@media( min-width: 450px ) {
+				max-width: 70%;
+			}
 			@media( min-width: 768px ) {
-				width: 100%;
+				max-width: 100%;
 			}
 		}
 
 		&--item {
 			font-size: 12px;
 			flex-grow: 1;
-			padding: 10px 0;
+			padding: 10px 5px;
 			text-align: center;
-			@media( min-width: 768px ) {
+			@media( min-width: 450px ) {
 				font-size: 14px;
+			}
+			@media( min-width: 768px ) {
+				font-size: 16px;
 				margin-top: 15px;
+			}
+			@media( min-width: 992px ) {
+				font-size: 18px;
 			}
 
 			&:hover {
-				background-color: $theme-nav-hover;
+				background-color: $theme-light-blue;
 			}
 			&:hover .header__navbar--anchor {
 				color: $theme-white;
@@ -61,7 +69,6 @@
 
 		&--anchor {
 			display: block;
-			padding: 0 5px;
 			text-decoration: none;
 			color: $theme-nav-text;
 		}
@@ -79,9 +86,10 @@
 
 		&--button {
 			background: $theme-light-orange;
-			padding: 8px 16px;
+			padding: 10px 15px;
 			border: none;
 			color: $theme-white;
+			font-size: 12px;
 
 			&:hover {
 				background: $theme-dark-orange;
