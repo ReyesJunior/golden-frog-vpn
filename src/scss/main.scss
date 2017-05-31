@@ -12,6 +12,7 @@ $theme-light-grey: #F5F6F8;
 $theme-dark-grey: #3A3D40;
 $theme-light-orange: #FF9800; 
 $theme-dark-orange: #ff7b00; 
+$theme-light-blue: #43b1e3;
 
 $theme-nav-text: #666666;
 $theme-nav-hover: #373737;
@@ -94,7 +95,7 @@ $grid-columns: 12;
     max-width: 90%;
   }
   @media( min-width: 1024px ){
-    max-width: 850px;
+    max-width: 1024px;
   }
 }
 
@@ -106,6 +107,7 @@ $grid-columns: 12;
 
 @import 'partials/header.scss';
 @import 'partials/vpn_outline.scss';
+@import 'partials/product_outline.scss';
 
 
 
