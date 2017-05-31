@@ -10,9 +10,8 @@
 
 	.vpn__image {
 		@include column(12);
-		background: $theme-white;
+		margin: 35px auto;
 		text-align: center;
-		padding: 35px 15px;
 		@media( min-width: 768px ) {
 			@include column(5);
 			float: right;
@@ -35,9 +34,17 @@
 		}
 
 		&--header {
-			padding: 0 15px;
 			font-weight: 300;
 			color: #333;
+			@media( min-width: 425px ) {
+				font-size: 26px;
+			}
+			@media( min-width: 768px ) {
+				font-size: 28px;
+			}
+			@media( min-width: 992px ) {
+				font-size: 30px;
+			}
 		}
 
 		&--body {
@@ -45,8 +52,18 @@
 			padding: 0 15px;
 			line-height: 21px;
 			color: #666666;
+			@media( min-width: 425px ) {
+				font-size: 15px;
+				line-height: 23px;
+			}
 			@media( min-width: 768px ) {
+				font-size: 16px;
+				line-height: 24px;
 				padding: 0;
+			}
+			@media( min-width: 992px ) {
+				font-size: 18px;
+				line-height: 27px;
 			}
 		}
 	}
