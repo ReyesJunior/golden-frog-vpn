@@ -104,8 +104,15 @@ $grid-columns: 12;
     max-width: 900px;
   }
 }
+
 .nav-inner-row-width {
   padding: 0;
+}
+
+.divider {
+  margin: 25px auto 15px;
+  border: 1px solid #D8D8D8;
+  width: 90%;
 }
 
 /* ==================================
@@ -117,6 +124,7 @@ $grid-columns: 12;
 @import 'partials/header.scss';
 @import 'partials/vpn_outline.scss';
 @import 'partials/product_outline.scss';
+@import 'partials/access_outline.scss';
 
 
 
