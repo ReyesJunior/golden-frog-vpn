@@ -73,21 +73,11 @@ $grid-columns: 12;
   }
 }
 
-// Max-width-wrapper
-@mixin max-width-wrapper {
-	max-width: 1440px;
-}
-
 /* ==================================
 
 // page-setup
 
 ================================== */
-
-.page-container {
-	@include container;
-	@include max-width-wrapper;
-}
 
 .nav-inner-row-width,.inner-row-width {
   margin: 0 auto;
@@ -101,7 +91,7 @@ $grid-columns: 12;
     padding: 0;
   }
   @media( min-width: 1024px ){
-    max-width: 900px;
+    max-width: 1000px;
   }
 }
 
@@ -112,7 +102,6 @@ $grid-columns: 12;
 .divider {
   margin: 50px auto;
   border: 1px solid #D8D8D8;
-  width: 90%;
 }
 
 /* ==================================
@@ -122,8 +111,8 @@ $grid-columns: 12;
 ================================== */
 
 @import 'partials/header.scss';
-// @import 'partials/product_outline.scss';
-@import 'partials/access_outline.scss';
+@import 'partials/vpn_outline.scss';
+@import 'partials/product_outline.scss';
 @import 'partials/footer.scss';
 
 
