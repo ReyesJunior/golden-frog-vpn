@@ -7,9 +7,15 @@
 
 .footer {
 	@include row;
-	margin-top: 35px;
+	margin-top: 50px;
 	padding: 50px 0;
 	background: $theme-dark-grey;
+	@media( min-width: 768px ) {
+		
+	}
+	@media( min-width: 992px ) {
+		
+	}
 
 	.footer__listing {
 		@include column(12);
