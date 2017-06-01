@@ -8,9 +8,7 @@
 .header {
 	@include row;
 	background: $theme-light-grey;
-	@media( min-width: 768px ) {
-		margin-bottom: 50px;
-	}
+	margin-bottom: 50px;
 
 	.header__logo {
 		@include column(12);
