@@ -1,0 +1,90 @@
+
+/* ==================================
+
+// Advantage
+
+================================== */
+
+.advantage {
+	@include row;
+
+	.advantage__icon {
+		@include column(12);
+		    margin: 35px auto;
+    		text-align: center;
+    		@media( min-width: 768px ) {
+    			@include column(5);
+    			float: right;
+    		}
+
+		&--image {
+			max-width: 135px;
+			@media( min-width: 768px ) {
+				max-width: 200px;
+				margin-top: 25px;
+			}
+		}
+	}
+
+	.advantage__content {
+		@include column(12);
+		text-align: center;
+		@media( min-width: 768px ) {
+			@include column(7);
+			text-align: left;
+		}
+
+		&--header {
+			font-weight: 300;
+			color: #333;
+			margin-bottom: 0;
+			@media( min-width: 425px ) {
+				font-size: 26px;
+			}
+			@media( min-width: 768px ) {
+				font-size: 28px;
+			}
+			@media( min-width: 992px ) {
+				font-size: 30px;
+			}
+		}
+
+		&--body {
+			margin-bottom: 25px;
+			font-size: 14px;
+			line-height: 21px;
+			color: #666666;
+			@media( min-width: 768px ) {
+				font-size: 16px;
+				line-height: 24px;
+			}
+			@media( min-width: 992px ) {
+				font-size: 18px;
+				line-height: 27px;
+			}
+		}
+
+		.advantage__listing {
+			margin: 0;
+			padding: 0;
+			color: #666666;
+
+			&--item {
+				width: 80%;
+				margin: 0 auto 15px;
+				font-size: 14px;
+				line-height: 21px;
+				color: #666666;
+				list-style-image: url('../../src/assets/checkmark.svg');
+				@media( min-width: 768px ) {
+					font-size: 16px;
+					line-height: 24px;
+				}
+				@media( min-width: 992px ) {
+					font-size: 18px;
+					line-height: 27px;
+				}	
+			}
+		}
+	}
+}
