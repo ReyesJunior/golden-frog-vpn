@@ -36,7 +36,7 @@
 			padding: 0;
 			list-style: none;
 			@media( min-width: 425px ) {
-				max-width: 80%;
+				max-width: 350px;
 			}
 			@media( min-width: 768px ) {
 				max-width: 100%;
@@ -61,6 +61,7 @@
 
 			&:hover {
 				background-color: $theme-light-blue;
+				cursor: pointer;
 			}
 			&:hover .header__navbar--anchor {
 				color: $theme-white;
@@ -77,11 +78,13 @@
 	.header__cta {
 		@include column(12);
 		display: none;
+		text-align: center;
+    	margin-bottom: 25px;
 		@media( min-width: 768px ) {
 			@include column(2);
 			display: block;
 			margin-top: 20px;
-			text-align: center;
+			margin-bottom: 0;
 		}
 
 		&--button {
@@ -93,6 +96,7 @@
 
 			&:hover {
 				background: $theme-dark-orange;
+				cursor: pointer;
 			}
 		}
 	}
