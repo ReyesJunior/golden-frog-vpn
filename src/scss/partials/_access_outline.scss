@@ -10,18 +10,24 @@
 
 	.access__icon {
 		@include column(12);
-		    margin: 35px auto;
-    		text-align: center;
-    		@media( min-width: 768px ) {
-    			@include column(5);
-    			float: right;
-    		}
+	    margin: 35px auto;
+		text-align: center;
+		@media( min-width: 768px ) {
+			@include column(5);
+			float: right;
+		}
 
 		&--image {
 			max-width: 135px;
+			@media( min-width: 425px ) {
+				max-width: 165px;
+			}
 			@media( min-width: 768px ) {
-				max-width: 200px;
-				margin-top: 25px;
+				max-width: 225px;
+    			margin-top: 25px;
+			}
+			@media( min-width: 992px ) {
+				max-width: 255px;
 			}
 		}
 	}
@@ -37,12 +43,13 @@
 		&--header {
 			font-weight: 300;
 			color: #333;
-			margin-bottom: 0;
+			margin: 0;
 			@media( min-width: 425px ) {
 				font-size: 26px;
 			}
 			@media( min-width: 768px ) {
 				font-size: 28px;
+				margin-top: 50px;
 			}
 			@media( min-width: 992px ) {
 				font-size: 30px;
